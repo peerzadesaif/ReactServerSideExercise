@@ -1,0 +1,50 @@
+{
+  "name": "reactserversideexercise",
+  "version": "1.0.0",
+  "description": "React Server Side Rendering Exercise",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development --watch & nodemon dist/main",
+    "build": "rm -rf dist public && webpack --mode production --progress",
+    "start": "NODE_ENV=production node dist/main",
+    "start:dev": "node dist/main",
+    "build:dev": "rm -rf dist public && webpack --mode development --progress",
+    "stats": "webpack --profile --json > stats.json && webpack-bundle-analyzer stats.json dist"
+  },
+  "keywords": [
+    "ReactJs",
+    "JavaScript",
+    "WebPack",
+    "ReactDom",
+    "NodeJs",
+    "Express",
+    "Material",
+    "bebelCore"
+  ],
+  "author": "Saif <saif.pirjade@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-import": "^1.13.0",
+    "core-js": "^3.6.5",
+    "nodemon": "^2.0.4",
+    "reload": "^3.1.0",
+    "webpack": "^4.44.0",
+    "webpack-bundle-analyzer": "^3.8.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.5.0"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.9.12",
+    "@material-ui/icons": "^4.9.1",
+    "express": "^4.17.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
